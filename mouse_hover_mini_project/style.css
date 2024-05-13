@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(77, 124, 107, 1), rgba(0, 89, 225, 1));
+}
+
+#container {
+    position: relative;
+    width: 80%; /* Set width to 80% of viewport width */
+    height: 80%; /* Set height to 80% of viewport height */
+    margin: 5px;
+    overflow: hidden;
+}
+
+.box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: cadetblue;
+    border-bottom: black;
+    border-color: black;
+    border: 5px;
+    border-radius: 1px;
+    font-weight: bold;
+    margin-bottom: auto;
+}
+
+#yes,
+#target {
+    text-align: center;
+    margin: auto;
+    border: none;
+    width: 25%; 
+    height: 10%;     border-radius: 10px;
+    font-size: 20px;
+    /* padding: 5px 10px; */
+    cursor: pointer;
+    transition: top 0.2s, left 0.3s;
+    /* margin-top: 20px; */
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#yes {
+    margin-top: 0px;
+    background-color: darkred;
+    bottom: 20px;
+    font-size: small;
+    margin-bottom: 170px;
+}
+
+img {
+    width: 300px; 
+    height: auto; 
+}
+
+#target {
+    background-color: rgba(0, 89, 225, 1);
+    bottom: 70px;
+    font-size: small;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
